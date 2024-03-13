@@ -5,6 +5,7 @@ from torchvision import transforms
 writer = SummaryWriter('logs')
 
 image_path = '../images/pytorch.jpg'
+# PIL格式
 img = Image.open(image_path)
 # print(img)
 
@@ -13,7 +14,7 @@ trans_totensor = transforms.ToTensor()
 img_tensor = trans_totensor(img)
 writer.add_image('ToTensor',img_tensor,4)
 
-# Normalize
+# Normalize 归一化
 print(img_tensor[0][0][0])
 trans_norm = transforms.Normalize([0.5,0.5,0.5],[0.5,0.5,0.5])
 img_norm = trans_norm(img_tensor)
