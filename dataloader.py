@@ -19,3 +19,5 @@ for data in test_loader:
     print(targets)
     writer.add_images('test_data_drop_last',imgs,step)
     step += 1
+
+writer.close()
