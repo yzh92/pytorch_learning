@@ -5,3 +5,5 @@
 /datasets_tranforms/p10/
 /logs/
 /data/
+./vgg16_method1.pth
+./vgg16_method2.pth
